@@ -1,4 +1,4 @@
-import { Avatar } from './Avatar'
+import { Avatar, Username } from './User'
 import styles from './css/Comment.module.css'
 import {Trash, ThumbsUp} from 'phosphor-react'
 
@@ -11,7 +11,7 @@ export function Comment(){
                 <div className={styles.commentContent}>
                     <header>
                         <div className={styles.authorAndTime}>
-                        <strong>Vitor Aurilândio</strong>
+                        <Username username='Vitor Aurilândio'/>
                         <time title='Publicado a 21 de Novembro' dateTime='2022-05-11 20:23'>Publicado cerca 1h atrás</time>
                         </div>
                         <button title='Deletar Comentário'>
